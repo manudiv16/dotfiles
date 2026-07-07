@@ -14,15 +14,21 @@ xcode-select --install
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 ```
 
-### 2. Clone this repo & install everything
+### 2. One-shot install (recommended)
+
+```bash
+curl -fsSL https://raw.githubusercontent.com/manudiv16/dotfiles/main/install.sh | sh
+```
+
+### 3. Or step by step
 
 ```bash
 cd ~ && git clone git@github.com:manudiv16/dotfiles.git
 cd dotfiles
-
+    
 # Install everything from Brewfile
 brew bundle --file=Brewfile
-
+    
 # Run bootstrap to symlink configs
 ./bootstrap.sh
 ```
