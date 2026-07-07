@@ -1,0 +1,2 @@
+-- SketchyBar configuration managed via dotfiles
+-- The sketchybarrc source is below

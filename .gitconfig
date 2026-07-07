@@ -1,0 +1,40 @@
+[user]
+	name = manudiv15
+	email = 38869988+manudiv16@users.noreply.github.com
+[alias]
+	gone = "! git fetch -p && git for-each-ref --format '%(refname:short) %(upstream:track)' | awk '$2 == \"[gone]\" {print $1}' | xargs -r git branch -D"
+	tatus = "status"
+	co = "checkout"
+	br = "branch"
+	st = "status -sb"
+	wtf = "!git-wtf"
+	lg = "log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --topo-order --date=relative"
+	gl = "log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --topo-order --date=relative"
+	lp = "log -p"
+	lr = "reflog"
+	ls = "ls-files"
+	dall = "diff"
+	d = "diff --relative"
+	dv = "difftool"
+	df = "diff --relative --name-only"
+	dvf = "difftool --relative --name-only"
+	dfall = "diff --name-only"
+	ds = "diff --relative --name-status"
+	dvs = "difftool --relative --name-status"
+	dsall = "diff --name-status"
+	dvsall = "difftool --name-status"
+	dr = "diff-index --cached --name-only --relative HEAD"
+	di = "diff-index --cached --patch --relative HEAD"
+	dfi = "diff-index --cached --name-only --relative HEAD"
+	subpull = "submodule foreach git pull"
+	subco = "submodule foreach git checkout master"
+[push]
+	autoSetupRemote = true
+[core]
+	excludesfile = ~/.gitignore
+[credential "https://github.com"]
+	helper =
+	helper = !/opt/homebrew/bin/gh auth git-credential
+[credential "https://gist.github.com"]
+	helper =
+	helper = !/opt/homebrew/bin/gh auth git-credential
