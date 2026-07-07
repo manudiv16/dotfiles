@@ -36,14 +36,12 @@ brew bundle --file=Brewfile
 - [ ] **SSH keys**: Copy `~/.ssh/id_ed25519` and `~/.ssh/id_ed25519.pub` from backup
 - [ ] **Kube configs**: Copy `~/.kube/config.k3s-homelab` from backup
 - [ ] **Sync Bitwarden**: Sign in to Bitwarden
-- [ ] **VS Code**: Sign in to sync extensions/settings
+- [ ] **Zed**: Sign in to sync settings
 - [ ] **Raycast**: Sign in to sync config
 - [ ] **Log in to macOS App Store** and download: (Spotify)
 - [ ] **DBeaver**: Set up database connections
 - [ ] **Browser**: Sign in to sync bookmarks/passwords
-- [ ] **SDKMAN**: `curl -s "https://get.sdkman.io" | bash` then install Java versions
 - [ ] **Rust**: `rustup-init` (if not installed via brew)
-- [ ] **Nix**: If you want Nix daemon: `sh <(curl -L https://nixos.org/nix/install)`
 
 ### 4. System Settings (macOS)
 
@@ -98,7 +96,6 @@ echo "All good 🎉"
 | `~/.aws/cli/cache/` | STS session tokens | Auto-refresh, skip copy. |
 | `~/.kube/*` | K8s cluster tokens | kubeconfigs use `assume` + `aws eks get-token`; no static tokens. Safe to copy config only. |
 | `~/.config/gh/hosts.yml` | GitHub auth tokens | Auto-created by `gh auth login`. |
-| `~/.config/github-copilot/*` | Copilot tokens | Auto-created by VS Code extension. |
 
 ### ✅ Already Safe
 
@@ -147,4 +144,4 @@ This will symlink all config files to their expected locations.
 - **Menu bar**: SketchyBar
 - **Launcher**: Raycast
 - **Secrets**: pass (password-store) + Bitwarden
-- **Browser**: (not managed here)
+- **Browser**: Zen

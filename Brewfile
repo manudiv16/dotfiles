@@ -186,8 +186,6 @@ cask "shottr"
 cask "spotify"
 # Window manager
 cask "tiles"
-# Open-source code editor
-cask "visual-studio-code"
 # GPU-accelerated cross-platform terminal emulator and multiplexer
 cask "wezterm"
 go "github.com/spf13/cobra-cli"

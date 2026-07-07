@@ -15,7 +15,7 @@ setopt EXTENDED_HISTORY
 export PATH="$PATH:$HOME/.local/share/coursier/bin"
 export PATH="$PATH:/usr/local/go/bin"
 export HOMEBREW_NO_INSTALL_CLEANUP=TRUE
-export EDITOR="code --wait"
+export EDITOR="zed --wait"
 
 zstyle ':completion:*' matcher-list 'm:{a-z}={A-Za-z}'
 
@@ -49,7 +49,7 @@ alias la="ls -la"
 alias "~"="z ~"
 alias "k"="kill -9"
 alias "p"="ps aux | grep"
-alias "c."="code ."
+alias "c."="zed ."
 alias "o."="open ."
 alias icat="kitten icat"
 alias s="kitten ssh"
