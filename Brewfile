@@ -6,7 +6,6 @@ tap "homebrew/services"
 tap "iina/mpv-iina"
 tap "janosmiko/tap"
 tap "keidarcy/tap"
-tap "manaflow-ai/cmux"
 tap "manudiv16/eaws"
 tap "nikitabobko/aerospace", "https://github.com/nikitabobko/homebrew-tap.git"
 tap "nikitabobko/tap"
@@ -155,8 +154,7 @@ brew "janosmiko/tap/lfk", trusted: true
 cask "nikitabobko/tap/aerospace"
 # Desktop password and login vault
 cask "bitwarden"
-# Ghostty-based terminal with vertical tabs and notifications for AI coding agents
-cask "cmux"
+
 # Universal database tool and SQL client
 cask "dbeaver-community"
 cask "font-fira-code"
@@ -184,8 +182,7 @@ cask "sf-symbols"
 cask "shottr"
 # Music streaming service
 cask "spotify"
-# Window manager
-cask "tiles"
+
 # GPU-accelerated cross-platform terminal emulator and multiplexer
 cask "wezterm"
 go "github.com/spf13/cobra-cli"
